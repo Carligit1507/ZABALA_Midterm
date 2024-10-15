@@ -61,16 +61,18 @@ class Instructor extends Person {
 }
 
 //Information of Student and Instructor
+//Parameterized Constructor
 public class EnrollmentSystem {
     static void printDetails(Person p) {
         p.displayInfo();
     }
 
+//Print Details
     public static void main(String[] args) {
-        Student student1 = new Student("Rai Rai", 23, "231005252", "Computer Engineering", 3);
-        Student student2 = new Student("Cezar", 19, "231000322", "Science", 5);
+        Student student1 = new Student("Rai Rai", 23, "231005252", "Computer Engineering", 6);
+        Student student2 = new Student("Cezar", 19, "231000322", "Computer Science", 5);
         Instructor instructor1 = new Instructor("Dr. Sarahlyn Catimbang", 45, "F001", "DSAA", 65000);
-        Instructor instructor2 = new Instructor("Prof. Alex Cosca", 40, "F002", "Chemistry", 70000);
+        Instructor instructor2 = new Instructor("Prof. Tanya Carmela Jovillano", 23, "F002", "CAD", 50000);
 
         printDetails(student1);
         printDetails(student2);
